@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gunja | Professional Portfolio - Healthcare & Technology</title>
+  <meta name="description" content="Professional portfolio of Gunja – Administrative support specialist, healthcare operations professional, customer service expert, and Computer Science student with expertise in data management and digital solutions." />
+  <meta name="keywords" content="Healthcare Administrator, Customer Service, Data Entry, Medical Records, Computer Science, Digital Marketing" />
+  <meta name="author" content="Gunja" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Gunja | Professional Portfolio" />
+  <meta property="og:description" content="Healthcare Administrator & Computer Science Student" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+  
+  <!-- Page Loader -->
+  <div class="page-loader">
+    <div class="loader-spinner"></div>
+  </div>
+  
+  <!-- Decorative Background -->
+  <div class="bg-art" aria-hidden="true"></div>
+  
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Gunja</h1>
+        <p class="subtitle">Healthcare & Technology Professional</p>
+      </div>
+      <nav class="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button id="printBtn" class="button button-ghost" title="Print Resume" aria-label="Print Resume">
+          <i class="ri-printer-line"></i>
+        </button>
+        <button id="themeToggle" class="button button-ghost" title="Toggle Theme" aria-label="Toggle Dark/Light Mode">
+          <i class="ri-moon-line"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Hero / About Section -->
+    <section id="about" class="card hero" data-reveal>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hi, I'm Gunja 👋<br/>
+            I'm a <span class="typing-text"></span><span class="typing-cursor"></span>
+          </h1>
+          <p id="summary" class="hero-description"></p>
+          <div class="hero-cta">
+            <a href="#contact" class="button button-primary">
+              <i class="ri-mail-line"></i> Get In Touch
+            </a>
+            <a href="assests/gk%20resume.n%20(1).pdf" target="_blank" rel="noopener" class="button button-outline">
+              <i class="ri-download-line"></i> Download Resume
+            </a>
+          </div>
+          <div class="quick-meta">
+            <span id="location"></span>
+            <span id="phone"></span>
+            <span id="email"></span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar" title="Gunja" aria-label="Profile Avatar">G</div>
+          <ul class="hero-tags">
+            <li><i class="ri-hospital-line"></i> Healthcare</li>
+            <li><i class="ri-computer-line"></i> Technology</li>
+            <li><i class="ri-customer-service-2-line"></i> Customer Service</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Stats / Achievements Section -->
+    <section class="card" data-reveal>
+      <h2 class="text-center">Career Highlights</h2>
+      <div id="statsContainer" class="stats-grid"></div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="card" data-reveal>
+      <h2><i class="ri-briefcase-line" style="margin-right: 0.5rem; color: var(--color-primary);"></i>Professional Experience</h2>
+      <div class="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="healthcare"><i class="ri-hospital-line"></i> Healthcare</button>
+        <button class="chip" data-filter="banking"><i class="ri-bank-card-line"></i> Banking</button>
+        <button class="chip" data-filter="ngo"><i class="ri-heart-line"></i> NGO</button>
+      </div>
+      <div id="experienceList" class="timeline"></div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="card" data-reveal>
+      <h2><i class="ri-folder-line" style="margin-right: 0.5rem; color: var(--color-primary);"></i>Key Projects & Contributions</h2>
+      <p style="color: var(--color-text-secondary); margin-bottom: var(--space-2xl);">
+        Throughout my career, I've contributed to impactful projects that improved processes, enhanced customer experiences, and supported community well-being.
+      </p>
+      <div id="projectsGrid" class="projects-grid"></div>
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education" class="card" data-reveal>
+      <h2><i class="ri-graduation-cap-line" style="margin-right: 0.5rem; color: var(--color-primary);"></i>Education</h2>
+      <ul id="educationList" class="list"></ul>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section id="certifications" class="card" data-reveal>
+      <h2><i class="ri-award-line" style="margin-right: 0.5rem; color: var(--color-primary);"></i>Certifications & Training</h2>
+      <ul id="certList" class="list"></ul>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="card" data-reveal>
+      <h2><i class="ri-tools-line" style="margin-right: 0.5rem; color: var(--color-primary);"></i>Skills & Expertise</h2>
+      <ul id="skillsList" class="skills"></ul>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="card" data-reveal>
+      <h2 class="text-center"><i class="ri-chat-quote-line" style="margin-right: 0.5rem; color: var(--color-primary);"></i>What People Say</h2>
+      <p class="text-center" style="color: var(--color-text-secondary); margin-bottom: var(--space-2xl);">
+        Feedback from colleagues and supervisors I've had the pleasure to work with
+      </p>
+      <div id="testimonialsGrid" class="testimonials-grid"></div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="card" data-reveal>
+      <h2><i class="ri-mail-send-line" style="margin-right: 0.5rem; color: var(--color-primary);"></i>Let's Connect</h2>
+      <p style="color: var(--color-text-secondary); margin-bottom: var(--space-2xl);">
+        I'm always open to discussing new opportunities, collaborations, or just having a conversation about healthcare, technology, and professional growth.
+      </p>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Location:</strong> <span id="contactLocation"></span></p>
+          <p><strong>Phone:</strong> <a id="contactPhone" href="#"></a></p>
+          <p><strong>Email:</strong> <a id="contactEmail" href="#"></a></p>
+          
+          <h3 style="margin-top: var(--space-2xl); margin-bottom: var(--space-lg);">Find me on</h3>
+          <div id="socialLinks" class="social-links"></div>
+        </div>
+        
+        <form id="contactForm" class="contact-form">
+          <label for="cfName">
+            Your Name
+            <input type="text" id="cfName" name="name" placeholder="John Doe" required />
+          </label>
+          
+          <label for="cfEmail">
+            Your Email
+            <input type="email" id="cfEmail" name="email" placeholder="john@example.com" required />
+          </label>
+          
+          <label for="cfMessage">
+            Message
+            <textarea id="cfMessage" name="message" rows="5" placeholder="Your message here..." required></textarea>
+          </label>
+          
+          <button type="submit" class="button button-primary" id="cfSubmit">
+            <i class="ri-send-plane-fill"></i> Send Message
+          </button>
+          
+          <div id="cfStatus" class="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+    
+  </main>
+  
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Gunja. All rights reserved. Built with passion and dedication.</p>
+      <p style="margin-top: var(--space-md); font-size: var(--font-size-sm);">
+        Healthcare Professional | Computer Science Student | Community Volunteer
+      </p>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
